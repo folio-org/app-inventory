@@ -2,11 +2,14 @@
   "name": "${project.name}",
   "version": "${project.version}",
   "description": "${project.description}",
-  "platform": "complete",
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^2.1.0"
+      "version": "^2.1.0-SNAPSHOT"
+    },
+    {
+      "name": "app-search",
+      "version": "^1.0.0-SNAPSHOT"
     }
   ],
   "modules": [
@@ -16,6 +19,10 @@
     },
     {
       "name": "mod-inventory-storage",
+      "version": "latest"
+    },
+    {
+      "name": "mod-inventory-update",
       "version": "latest"
     },
     {
