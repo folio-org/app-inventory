@@ -1,0 +1,52 @@
+{
+  "name": "${project.name}",
+  "version": "${project.version}",
+  "description": "${project.description}",
+  "platform": "complete",
+  "dependencies": [
+    {
+      "name": "app-platform-minimal",
+      "version": "^2.1.0",
+      "preRelease": "false"
+    }
+  ],
+  "modules": [
+    {
+      "name": "mod-inventory",
+      "version": "latest",
+      "preRelease": "false"
+    },
+    {
+      "name": "mod-inventory-storage",
+      "version": "latest",
+      "preRelease": "false"
+    },
+    {
+      "name": "edge-inventory",
+      "version": "latest",
+      "preRelease": "false"
+    }
+  ],
+  "uiModules": [
+    {
+      "name": "folio_inventory",
+      "version": "latest",
+      "preRelease": "false"
+    },
+    {
+      "name": "folio_plugin-create-inventory-records",
+      "version": "latest",
+      "preRelease": "false"
+    },
+    {
+      "name": "folio_plugin-find-instance",
+      "version": "latest",
+      "preRelease": "false"
+    },
+    {
+      "name": "folio_stripes-inventory-components",
+      "version": "latest",
+      "preRelease": "false"
+    }
+  ]
+}
