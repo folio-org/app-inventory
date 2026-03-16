@@ -15,6 +15,7 @@ Application Descriptor Repository for Inventory application.
 | UI module name                          |
 |:----------------------------------------|
 | `folio_inventory`                       |
+| `folio_inventory-import`                |
 | `folio_plugin-create-inventory-records` |
 | `folio_plugin-find-instance`            |
 | `folio_stripes-inventory-components`    |

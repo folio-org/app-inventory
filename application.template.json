@@ -44,6 +44,11 @@
       "preRelease": "only"
     },
     {
+      "name": "folio_inventory-update",
+      "version": "latest",
+      "preRelease": "only"
+    },
+    {
       "name": "folio_plugin-create-inventory-records",
       "version": "latest",
       "preRelease": "only"
