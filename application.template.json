@@ -27,7 +27,7 @@
       "preRelease": "only"
     },
     {
-      "name": "mod-inventory-import",
+      "name": "mod-inventory-update",
       "version": "latest",
       "preRelease": "only"
     },
@@ -44,7 +44,7 @@
       "preRelease": "only"
     },
     {
-      "name": "folio_inventory-update",
+      "name": "folio_inventory-import",
       "version": "latest",
       "preRelease": "only"
     },
