@@ -27,7 +27,7 @@
       "preRelease": "only"
     },
     {
-      "name": "mod-inventory-update",
+      "name": "mod-inventory-import",
       "version": "latest",
       "preRelease": "only"
     },
