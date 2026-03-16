@@ -36,6 +36,10 @@
       "version": "latest"
     },
     {
+      "name": "folio_inventory-import",
+      "version": "latest"
+    },
+    {
       "name": "folio_plugin-create-inventory-records",
       "version": "latest"
     },
