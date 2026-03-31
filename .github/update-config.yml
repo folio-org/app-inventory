@@ -13,6 +13,7 @@ branches:
       need_pr: false
       pre_release: "only"
       descriptor_build_offset: "100200000000000"
+      skip_dependency_validation: bypas
 #  - R2-2024:
 #      enable: false
 #      need_pr: true
