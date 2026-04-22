@@ -6,66 +6,66 @@
   "dependencies": [
     {
       "name": "app-platform-minimal",
-      "version": "^VERSION_^2.1.0-SNAPSHOT",
+      "version": "~2.1.0",
       "preRelease": "false"
     },
     {
       "name": "app-search",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     },
     {
       "name": "app-marc-storage",
-      "version": "^VERSION_^1.0.0-SNAPSHOT",
+      "version": "~1.0.0",
       "preRelease": "false"
     }
   ],
   "modules": [
     {
       "name": "mod-inventory",
-      "version": "^VERSION_latest",
+      "version": "~22.0.0",
       "preRelease": "false"
     },
     {
       "name": "mod-inventory-storage",
-      "version": "^VERSION_latest",
+      "version": "~30.0.0",
       "preRelease": "false"
     },
     {
       "name": "mod-inventory-update",
-      "version": "^VERSION_latest",
+      "version": "~5.1.0",
       "preRelease": "false"
     },
     {
       "name": "edge-inventory",
-      "version": "^VERSION_latest",
+      "version": "~2.3.0",
       "preRelease": "false"
     }
   ],
   "uiModules": [
     {
       "name": "folio_inventory",
-      "version": "^VERSION_latest",
+      "version": "~14.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_inventory-import",
-      "version": "^VERSION_latest",
+      "version": "~4.1.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-create-inventory-records",
-      "version": "^VERSION_latest",
+      "version": "~7.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_plugin-find-instance",
-      "version": "^VERSION_latest",
+      "version": "~10.0.0",
       "preRelease": "false"
     },
     {
       "name": "folio_stripes-inventory-components",
-      "version": "^VERSION_latest",
+      "version": "~2.1.0",
       "preRelease": "false"
     }
   ]
