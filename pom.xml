@@ -6,7 +6,7 @@
   <artifactId>app-inventory</artifactId>
   <groupId>org.folio</groupId>
   <description>Inventory Application</description>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
 
   <properties>
     <project.name>app-inventory</project.name>
