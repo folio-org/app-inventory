@@ -22,6 +22,11 @@
       "preRelease": "false"
     },
     {
+      "name": "mod-inventory-update",
+      "version": "latest",
+      "preRelease": "false"
+    },
+    {
       "name": "edge-inventory",
       "version": "latest",
       "preRelease": "false"
@@ -30,6 +35,11 @@
   "uiModules": [
     {
       "name": "folio_inventory",
+      "version": "latest",
+      "preRelease": "false"
+    },
+    {
+      "name": "folio_inventory-import",
       "version": "latest",
       "preRelease": "false"
     },
