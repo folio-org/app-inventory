@@ -19,6 +19,10 @@
       "version": "latest"
     },
     {
+      "name": "mod-inventory-update",
+      "version": "latest"
+    },
+    {
       "name": "edge-inventory",
       "version": "latest"
     }
@@ -26,6 +30,10 @@
   "uiModules": [
     {
       "name": "folio_inventory",
+      "version": "latest"
+    },
+    {
+      "name": "folio_inventory-import",
       "version": "latest"
     },
     {
