@@ -1,16 +1,16 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004102",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004115",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000004102",
+  "version" : "1.1.0-SNAPSHOT.100200000004115",
   "description" : "Inventory Application",
   "modules" : [ {
+    "id" : "mod-inventory-22.1.0-SNAPSHOT.2179",
+    "name" : "mod-inventory",
+    "version" : "22.1.0-SNAPSHOT.2179"
+  }, {
     "id" : "mod-inventory-storage-30.1.0-SNAPSHOT.2770",
     "name" : "mod-inventory-storage",
     "version" : "30.1.0-SNAPSHOT.2770"
-  }, {
-    "id" : "mod-inventory-22.1.0-SNAPSHOT.2172",
-    "name" : "mod-inventory",
-    "version" : "22.1.0-SNAPSHOT.2172"
   }, {
     "id" : "mod-inventory-update-5.1.4-SNAPSHOT.2150",
     "name" : "mod-inventory-update",
@@ -55,7 +55,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-inventory-22.1.0-SNAPSHOT.2172",
+    "id" : "mod-inventory-22.1.0-SNAPSHOT.2179",
     "name" : "Inventory Module",
     "requires" : [ {
       "id" : "holdings-sources",
@@ -538,7 +538,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-inventory:22.1.0-SNAPSHOT.2172",
+      "dockerImage" : "folioci/mod-inventory:22.1.0-SNAPSHOT.2179",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
