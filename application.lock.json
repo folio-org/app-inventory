@@ -1,9 +1,13 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004119",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004127",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000004119",
+  "version" : "1.1.0-SNAPSHOT.100200000004127",
   "description" : "Inventory Application",
   "modules" : [ {
+    "id" : "mod-inventory-update-5.1.4-SNAPSHOT.2158",
+    "name" : "mod-inventory-update",
+    "version" : "5.1.4-SNAPSHOT.2158"
+  }, {
     "id" : "mod-inventory-22.1.0-SNAPSHOT.2179",
     "name" : "mod-inventory",
     "version" : "22.1.0-SNAPSHOT.2179"
@@ -11,10 +15,6 @@
     "id" : "mod-inventory-storage-30.1.0-SNAPSHOT.2770",
     "name" : "mod-inventory-storage",
     "version" : "30.1.0-SNAPSHOT.2770"
-  }, {
-    "id" : "mod-inventory-update-5.1.4-SNAPSHOT.2150",
-    "name" : "mod-inventory-update",
-    "version" : "5.1.4-SNAPSHOT.2150"
   }, {
     "id" : "edge-inventory-2.4.0-SNAPSHOT.2046",
     "name" : "edge-inventory",
@@ -2971,7 +2971,7 @@
     },
     "replaces" : [ "inventory-storage" ]
   }, {
-    "id" : "mod-inventory-update-5.1.4-SNAPSHOT.2150",
+    "id" : "mod-inventory-update-5.1.4-SNAPSHOT.2158",
     "name" : "Inventory Update Module",
     "requires" : [ {
       "id" : "instance-storage",
@@ -3506,7 +3506,7 @@
       "subPermissions" : [ "inventory-update.by-hrid.item.put", "inventory-update.batch-by-hrid.collection.put", "inventory-update.by-hrid.item.delete", "inventory-update.by-hrid.item.get", "inventory-update.by-matchkey.item.put", "inventory-update.batch-by-matchkey.collection.put", "inventory-update.by-matchkey.item.delete", "inventory-update.by-matchkey.item.get", "inventory-update.import.transformations.collection.get", "inventory-update.import.transformations.item.get", "inventory-update.import.transformations.item.post", "inventory-update.import.transformations.item.put", "inventory-update.import.transformations.item.delete", "inventory-update.import.steps.collection.get", "inventory-update.import.steps.item.get", "inventory-update.import.steps.item.post", "inventory-update.import.steps.item.put", "inventory-update.import.steps.item.delete", "inventory-update.import.step-script.item.get", "inventory-update.import.step-script.item.put", "inventory-update.import.tsas.collection.get", "inventory-update.import.tsas.item.get", "inventory-update.import.tsas.item.post", "inventory-update.import.tsas.item.put", "inventory-update.import.tsas.item.delete", "inventory-update.import.channels.collection.get", "inventory-update.import.channels.item.get", "inventory-update.import.channels.item.post", "inventory-update.import.channels.item.put", "inventory-update.import.channels.item.delete", "inventory-update.import.import-jobs.collection.get", "inventory-update.import.import-jobs.item.get", "inventory-update.import.import-jobs.item.post", "inventory-update.import.import-jobs.item.delete", "inventory-update.import.job-logs.collection.get", "inventory-update.import.job-logs.collection.post", "inventory-update.import.failed-records.collection.get", "inventory-update.import.failed-records.item.get", "inventory-update.import.failed-records.collection.post", "inventory-update.import.failed-records.item.delete", "inventory-update.import.upload.post", "inventory-update.import.try-transformation.post", "inventory-update.import.commission.post", "inventory-update.import.decommission.post", "inventory-update.import.channel.listen.post", "inventory-update.import.channel.no-listen.post", "inventory-update.import.recover-interrupted-channels", "inventory-update.import.pause-job.post", "inventory-update.import.resume-job.post", "inventory-update.import.init-queue.post", "mod-settings.global.read.mod-inventory-update.manage", "mod-settings.global.write.mod-inventory-update.manage" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-inventory-update:5.1.4-SNAPSHOT.2150",
+      "dockerImage" : "folioci/mod-inventory-update:5.1.4-SNAPSHOT.2158",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
