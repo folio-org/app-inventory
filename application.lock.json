@@ -1,7 +1,7 @@
 {
-  "id" : "app-inventory-1.0.17",
+  "id" : "app-inventory-1.0.18",
   "name" : "app-inventory",
-  "version" : "1.0.17",
+  "version" : "1.0.18",
   "description" : "Inventory Application",
   "modules" : [ {
     "id" : "mod-inventory-22.0.2",
@@ -21,9 +21,9 @@
     "version" : "2.3.1"
   } ],
   "uiModules" : [ {
-    "id" : "folio_inventory-14.0.5",
+    "id" : "folio_inventory-14.0.6",
     "name" : "folio_inventory",
-    "version" : "14.0.5"
+    "version" : "14.0.6"
   }, {
     "id" : "folio_inventory-import-4.1.2",
     "name" : "folio_inventory-import",
@@ -3589,7 +3589,7 @@
     }
   } ],
   "uiModuleDescriptors" : [ {
-    "id" : "folio_inventory-14.0.5",
+    "id" : "folio_inventory-14.0.6",
     "name" : "Inventory manager",
     "requires" : [ {
       "id" : "alternative-title-types",
