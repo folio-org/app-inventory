@@ -1,12 +1,12 @@
 {
-  "id" : "app-inventory-1.0.18",
+  "id" : "app-inventory-1.0.19",
   "name" : "app-inventory",
-  "version" : "1.0.18",
+  "version" : "1.0.19",
   "description" : "Inventory Application",
   "modules" : [ {
-    "id" : "mod-inventory-22.0.2",
+    "id" : "mod-inventory-22.0.3",
     "name" : "mod-inventory",
-    "version" : "22.0.2"
+    "version" : "22.0.3"
   }, {
     "id" : "mod-inventory-storage-30.0.5",
     "name" : "mod-inventory-storage",
@@ -55,7 +55,7 @@
     "preRelease" : "false"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-inventory-22.0.2",
+    "id" : "mod-inventory-22.0.3",
     "name" : "Inventory Module",
     "requires" : [ {
       "id" : "holdings-sources",
@@ -538,7 +538,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/mod-inventory:22.0.2",
+      "dockerImage" : "folioorg/mod-inventory:22.0.3",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
