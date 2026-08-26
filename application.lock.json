@@ -1,24 +1,24 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004805",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004841",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000004805",
+  "version" : "1.1.0-SNAPSHOT.100200000004841",
   "description" : "Inventory Application",
   "modules" : [ {
-    "id" : "mod-inventory-storage-30.1.0-SNAPSHOT.2790",
-    "name" : "mod-inventory-storage",
-    "version" : "30.1.0-SNAPSHOT.2790"
+    "id" : "edge-inventory-2.4.0-SNAPSHOT.2129",
+    "name" : "edge-inventory",
+    "version" : "2.4.0-SNAPSHOT.2129"
   }, {
     "id" : "mod-inventory-22.1.0-SNAPSHOT.2271",
     "name" : "mod-inventory",
     "version" : "22.1.0-SNAPSHOT.2271"
   }, {
+    "id" : "mod-inventory-storage-30.1.0-SNAPSHOT.2790",
+    "name" : "mod-inventory-storage",
+    "version" : "30.1.0-SNAPSHOT.2790"
+  }, {
     "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2208",
     "name" : "mod-inventory-update",
     "version" : "5.2.2-SNAPSHOT.2208"
-  }, {
-    "id" : "edge-inventory-2.4.0-SNAPSHOT.2046",
-    "name" : "edge-inventory",
-    "version" : "2.4.0-SNAPSHOT.2046"
   } ],
   "uiModules" : [ {
     "id" : "folio_inventory-14.1.1099000000002084",
@@ -3533,7 +3533,7 @@
       }
     }
   }, {
-    "id" : "edge-inventory-2.4.0-SNAPSHOT.2046",
+    "id" : "edge-inventory-2.4.0-SNAPSHOT.2129",
     "name" : "Retrieve inventory information Edge API",
     "requires" : [ {
       "id" : "inventory",
@@ -3563,6 +3563,9 @@
       "id" : "instance-types",
       "version" : "2.0"
     }, {
+      "id" : "instance-storage",
+      "version" : "11.4"
+    }, {
       "id" : "instance-note-types",
       "version" : "1.0"
     }, {
@@ -3586,8 +3589,84 @@
     } ],
     "provides" : [ ],
     "permissionSets" : [ ],
+    "env" : [ {
+      "name" : "JAVA_OPTIONS",
+      "value" : "-XX:MaxRAMPercentage=66.0",
+      "description" : "Java runtime options for the module container.",
+      "required" : false
+    }, {
+      "name" : "SERVER_PORT",
+      "value" : "8080",
+      "description" : "HTTP port used by the embedded Spring Boot server.",
+      "required" : false
+    }, {
+      "name" : "FOLIO_ENVIRONMENT",
+      "value" : "dev",
+      "description" : "FOLIO environment name used by folio-spring-system-user configuration.",
+      "required" : false
+    }, {
+      "name" : "FOLIO_CLIENT_OKAPIURL",
+      "value" : "",
+      "description" : "Okapi base URL used for outbound FOLIO service calls.",
+      "required" : false
+    }, {
+      "name" : "FOLIO_CLIENT_TLS_ENABLED",
+      "value" : "false",
+      "description" : "Enables custom TLS truststore configuration for outbound Okapi/client calls.",
+      "required" : false
+    }, {
+      "name" : "FOLIO_CLIENT_TLS_TRUSTSTOREPATH",
+      "value" : "",
+      "description" : "Path to the outbound client TLS truststore. Required only when FOLIO_CLIENT_TLS_ENABLED is true and the server certificate is not trusted by the default JVM truststore.",
+      "required" : false
+    }, {
+      "name" : "FOLIO_CLIENT_TLS_TRUSTSTOREPASSWORD",
+      "value" : "",
+      "description" : "Password for the outbound client TLS truststore.",
+      "required" : false
+    }, {
+      "name" : "FOLIO_CLIENT_TLS_TRUSTSTORETYPE",
+      "value" : "",
+      "description" : "Type of the outbound client TLS truststore, for example JKS, PKCS12, or BCFKS. If unset, the JVM default truststore type is used.",
+      "required" : false
+    }, {
+      "name" : "SECURE_STORE_PROPS",
+      "value" : "src/main/resources/ephemeral.properties",
+      "description" : "Path or URL to the edge secure-store properties file used to configure the secure store for institutional user credentials. In the FOLIO container image this relative default resolves from /usr/verticles, so operators using the default must mount the file at /usr/verticles/src/main/resources/ephemeral.properties, or set SECURE_STORE_PROPS to another absolute path or URL.",
+      "required" : false
+    }, {
+      "name" : "API_KEY_SOURCES",
+      "value" : "PARAM,HEADER,PATH",
+      "description" : "Comma-separated list of locations where the edge API key is accepted. Valid values are PARAM, HEADER, and PATH.",
+      "required" : false
+    }, {
+      "name" : "TOKEN_CACHE_TTL_MS",
+      "value" : "3600000",
+      "description" : "Time to live, in milliseconds, for successful Okapi token cache entries.",
+      "required" : false
+    }, {
+      "name" : "NULL_TOKEN_CACHE_TTL_MS",
+      "value" : "30000",
+      "description" : "Time to live, in milliseconds, for failed or null Okapi token cache entries.",
+      "required" : false
+    }, {
+      "name" : "TOKEN_CACHE_CAPACITY",
+      "value" : "100",
+      "description" : "Maximum number of Okapi token entries held by the in-memory edge token cache.",
+      "required" : false
+    }, {
+      "name" : "EDGE_SECURITY_FILTER_ENABLED",
+      "value" : "true",
+      "description" : "Enables the edge API key security filter.",
+      "required" : false
+    }, {
+      "name" : "HEADER_EDGE_VALIDATION_EXCLUDE",
+      "value" : "/admin/health,/admin/info,/swagger-resources,/v2/api-docs,/swagger-ui,/_/tenant",
+      "description" : "Comma-separated list of request path prefixes excluded from edge API key validation.",
+      "required" : false
+    } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/edge-inventory:2.4.0-SNAPSHOT.2046",
+      "dockerImage" : "folioci/edge-inventory:2.4.0-SNAPSHOT.2129",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
