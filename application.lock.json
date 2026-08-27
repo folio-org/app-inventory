@@ -1,13 +1,9 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004841",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004846",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000004841",
+  "version" : "1.1.0-SNAPSHOT.100200000004846",
   "description" : "Inventory Application",
   "modules" : [ {
-    "id" : "edge-inventory-2.4.0-SNAPSHOT.2129",
-    "name" : "edge-inventory",
-    "version" : "2.4.0-SNAPSHOT.2129"
-  }, {
     "id" : "mod-inventory-22.1.0-SNAPSHOT.2271",
     "name" : "mod-inventory",
     "version" : "22.1.0-SNAPSHOT.2271"
@@ -19,11 +15,15 @@
     "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2208",
     "name" : "mod-inventory-update",
     "version" : "5.2.2-SNAPSHOT.2208"
+  }, {
+    "id" : "edge-inventory-2.4.0-SNAPSHOT.2129",
+    "name" : "edge-inventory",
+    "version" : "2.4.0-SNAPSHOT.2129"
   } ],
   "uiModules" : [ {
-    "id" : "folio_inventory-14.1.1099000000002084",
+    "id" : "folio_inventory-14.1.1099000000002089",
     "name" : "folio_inventory",
-    "version" : "14.1.1099000000002084"
+    "version" : "14.1.1099000000002089"
   }, {
     "id" : "folio_inventory-import-4.1.2099000000000258",
     "name" : "folio_inventory-import",
@@ -3685,7 +3685,7 @@
     }
   } ],
   "uiModuleDescriptors" : [ {
-    "id" : "folio_inventory-14.1.1099000000002084",
+    "id" : "folio_inventory-14.1.1099000000002089",
     "name" : "Inventory manager",
     "requires" : [ {
       "id" : "alternative-title-types",
