@@ -1,7 +1,7 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004914",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000004915",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000004914",
+  "version" : "1.1.0-SNAPSHOT.100200000004915",
   "description" : "Inventory Application",
   "modules" : [ {
     "id" : "mod-inventory-22.1.0-SNAPSHOT.2278",
@@ -21,9 +21,9 @@
     "version" : "2.4.0-SNAPSHOT.2129"
   } ],
   "uiModules" : [ {
-    "id" : "folio_inventory-import-4.1.2099000000000263",
+    "id" : "folio_inventory-import-4.1.2099000000000264",
     "name" : "folio_inventory-import",
-    "version" : "4.1.2099000000000263"
+    "version" : "4.1.2099000000000264"
   }, {
     "id" : "folio_inventory-14.1.1099000000002089",
     "name" : "folio_inventory",
@@ -4414,7 +4414,7 @@
       }
     }
   }, {
-    "id" : "folio_inventory-import-4.1.2099000000000263",
+    "id" : "folio_inventory-import-4.1.2099000000000264",
     "name" : "Admin console for FOLIO's Inventory Import facility",
     "requires" : [ {
       "id" : "inventory-import",
