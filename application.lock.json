@@ -1,33 +1,33 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005024",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005026",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000005024",
+  "version" : "1.1.0-SNAPSHOT.100200000005026",
   "description" : "Inventory Application",
   "modules" : [ {
-    "id" : "mod-inventory-storage-31.0.0-SNAPSHOT.2875",
-    "name" : "mod-inventory-storage",
-    "version" : "31.0.0-SNAPSHOT.2875"
+    "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2246",
+    "name" : "mod-inventory-update",
+    "version" : "5.2.2-SNAPSHOT.2246"
   }, {
     "id" : "mod-inventory-22.1.0-SNAPSHOT.2317",
     "name" : "mod-inventory",
     "version" : "22.1.0-SNAPSHOT.2317"
   }, {
-    "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2224",
-    "name" : "mod-inventory-update",
-    "version" : "5.2.2-SNAPSHOT.2224"
+    "id" : "mod-inventory-storage-31.0.0-SNAPSHOT.2875",
+    "name" : "mod-inventory-storage",
+    "version" : "31.0.0-SNAPSHOT.2875"
   }, {
     "id" : "edge-inventory-2.4.0-SNAPSHOT.2152",
     "name" : "edge-inventory",
     "version" : "2.4.0-SNAPSHOT.2152"
   } ],
   "uiModules" : [ {
+    "id" : "folio_inventory-import-4.1.2099000000000275",
+    "name" : "folio_inventory-import",
+    "version" : "4.1.2099000000000275"
+  }, {
     "id" : "folio_inventory-14.1.1099000000002147",
     "name" : "folio_inventory",
     "version" : "14.1.1099000000002147"
-  }, {
-    "id" : "folio_inventory-import-4.1.2099000000000274",
-    "name" : "folio_inventory-import",
-    "version" : "4.1.2099000000000274"
   }, {
     "id" : "folio_plugin-create-inventory-records-7.0.1099000000000165",
     "name" : "folio_plugin-create-inventory-records",
@@ -2987,7 +2987,7 @@
     },
     "replaces" : [ "inventory-storage" ]
   }, {
-    "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2224",
+    "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2246",
     "name" : "Inventory Update Module",
     "requires" : [ {
       "id" : "instance-storage",
@@ -3531,7 +3531,7 @@
       "subPermissions" : [ "inventory-update.by-hrid.item.put", "inventory-update.batch-by-hrid.collection.put", "inventory-update.by-hrid.item.delete", "inventory-update.by-hrid.item.get", "inventory-update.by-matchkey.item.put", "inventory-update.batch-by-matchkey.collection.put", "inventory-update.by-matchkey.item.delete", "inventory-update.by-matchkey.item.get", "inventory-update.import.transformations.collection.get", "inventory-update.import.transformations.item.get", "inventory-update.import.transformations.item.post", "inventory-update.import.transformations.item.put", "inventory-update.import.transformations.item.delete", "inventory-update.import.steps.collection.get", "inventory-update.import.steps.item.get", "inventory-update.import.steps.item.post", "inventory-update.import.steps.item.put", "inventory-update.import.steps.item.delete", "inventory-update.import.step-script.item.get", "inventory-update.import.step-script.item.put", "inventory-update.import.tsas.collection.get", "inventory-update.import.tsas.item.get", "inventory-update.import.tsas.item.post", "inventory-update.import.tsas.item.put", "inventory-update.import.tsas.item.delete", "inventory-update.import.channels.collection.get", "inventory-update.import.channels.item.get", "inventory-update.import.channels.item.post", "inventory-update.import.channels.item.put", "inventory-update.import.channels.item.delete", "inventory-update.import.import-jobs.collection.get", "inventory-update.import.import-jobs.item.get", "inventory-update.import.import-jobs.item.post", "inventory-update.import.import-jobs.item.delete", "inventory-update.import.job-logs.collection.get", "inventory-update.import.job-logs.collection.post", "inventory-update.import.failed-records.collection.get", "inventory-update.import.failed-records.item.get", "inventory-update.import.failed-records.collection.post", "inventory-update.import.failed-records.item.delete", "inventory-update.import.upload.post", "inventory-update.import.harvest.post", "inventory-update.import.try-transformation.post", "inventory-update.import.commission.post", "inventory-update.import.decommission.post", "inventory-update.import.channel.listen.post", "inventory-update.import.channel.no-listen.post", "inventory-update.import.recover-interrupted-channels", "inventory-update.import.pause-job.post", "inventory-update.import.resume-job.post", "inventory-update.import.init-queue.post", "mod-settings.global.read.mod-inventory-update.manage", "mod-settings.global.write.mod-inventory-update.manage" ]
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-inventory-update:5.2.2-SNAPSHOT.2224",
+      "dockerImage" : "folioci/mod-inventory-update:5.2.2-SNAPSHOT.2246",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -4430,7 +4430,7 @@
       }
     }
   }, {
-    "id" : "folio_inventory-import-4.1.2099000000000274",
+    "id" : "folio_inventory-import-4.1.2099000000000275",
     "name" : "Admin console for FOLIO's Inventory Import facility",
     "requires" : [ {
       "id" : "inventory-import",
