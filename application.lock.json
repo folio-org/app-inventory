@@ -1,33 +1,33 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005026",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005031",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000005026",
+  "version" : "1.1.0-SNAPSHOT.100200000005031",
   "description" : "Inventory Application",
   "modules" : [ {
-    "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2246",
-    "name" : "mod-inventory-update",
-    "version" : "5.2.2-SNAPSHOT.2246"
-  }, {
-    "id" : "mod-inventory-22.1.0-SNAPSHOT.2317",
+    "id" : "mod-inventory-22.1.0-SNAPSHOT.2328",
     "name" : "mod-inventory",
-    "version" : "22.1.0-SNAPSHOT.2317"
+    "version" : "22.1.0-SNAPSHOT.2328"
+  }, {
+    "id" : "edge-inventory-2.4.0-SNAPSHOT.2159",
+    "name" : "edge-inventory",
+    "version" : "2.4.0-SNAPSHOT.2159"
   }, {
     "id" : "mod-inventory-storage-31.0.0-SNAPSHOT.2875",
     "name" : "mod-inventory-storage",
     "version" : "31.0.0-SNAPSHOT.2875"
   }, {
-    "id" : "edge-inventory-2.4.0-SNAPSHOT.2152",
-    "name" : "edge-inventory",
-    "version" : "2.4.0-SNAPSHOT.2152"
+    "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2246",
+    "name" : "mod-inventory-update",
+    "version" : "5.2.2-SNAPSHOT.2246"
   } ],
   "uiModules" : [ {
-    "id" : "folio_inventory-import-4.1.2099000000000275",
-    "name" : "folio_inventory-import",
-    "version" : "4.1.2099000000000275"
-  }, {
     "id" : "folio_inventory-14.1.1099000000002147",
     "name" : "folio_inventory",
     "version" : "14.1.1099000000002147"
+  }, {
+    "id" : "folio_inventory-import-4.1.2099000000000275",
+    "name" : "folio_inventory-import",
+    "version" : "4.1.2099000000000275"
   }, {
     "id" : "folio_plugin-create-inventory-records-7.0.1099000000000165",
     "name" : "folio_plugin-create-inventory-records",
@@ -55,7 +55,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-inventory-22.1.0-SNAPSHOT.2317",
+    "id" : "mod-inventory-22.1.0-SNAPSHOT.2328",
     "name" : "Inventory Module",
     "requires" : [ {
       "id" : "holdings-sources",
@@ -250,7 +250,7 @@
       }, {
         "methods" : [ "DELETE" ],
         "pathPattern" : "/inventory/instances/{id}/mark-deleted",
-        "permissionsRequired" : [ ],
+        "permissionsRequired" : [ "*" ],
         "modulePermissions" : [ "inventory-storage.instances.item.get", "inventory-storage.instances.item.put", "source-storage.records.delete" ]
       } ]
     }, {
@@ -538,7 +538,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-inventory:22.1.0-SNAPSHOT.2317",
+      "dockerImage" : "folioci/mod-inventory:22.1.0-SNAPSHOT.2328",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
@@ -3549,7 +3549,7 @@
       }
     }
   }, {
-    "id" : "edge-inventory-2.4.0-SNAPSHOT.2152",
+    "id" : "edge-inventory-2.4.0-SNAPSHOT.2159",
     "name" : "Retrieve inventory information Edge API",
     "requires" : [ {
       "id" : "inventory",
@@ -3682,7 +3682,7 @@
       "required" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/edge-inventory:2.4.0-SNAPSHOT.2152",
+      "dockerImage" : "folioci/edge-inventory:2.4.0-SNAPSHOT.2159",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
