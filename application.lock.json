@@ -1,13 +1,9 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005127",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005130",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000005127",
+  "version" : "1.1.0-SNAPSHOT.100200000005130",
   "description" : "Inventory Application",
   "modules" : [ {
-    "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2256",
-    "name" : "mod-inventory-update",
-    "version" : "5.2.2-SNAPSHOT.2256"
-  }, {
     "id" : "mod-inventory-22.1.0-SNAPSHOT.2373",
     "name" : "mod-inventory",
     "version" : "22.1.0-SNAPSHOT.2373"
@@ -16,18 +12,22 @@
     "name" : "mod-inventory-storage",
     "version" : "31.0.0-SNAPSHOT.2947"
   }, {
+    "id" : "mod-inventory-update-5.2.2-SNAPSHOT.2256",
+    "name" : "mod-inventory-update",
+    "version" : "5.2.2-SNAPSHOT.2256"
+  }, {
     "id" : "edge-inventory-2.4.0-SNAPSHOT.2159",
     "name" : "edge-inventory",
     "version" : "2.4.0-SNAPSHOT.2159"
   } ],
   "uiModules" : [ {
+    "id" : "folio_inventory-import-4.1.2099000000000276",
+    "name" : "folio_inventory-import",
+    "version" : "4.1.2099000000000276"
+  }, {
     "id" : "folio_inventory-14.1.1099000000002177",
     "name" : "folio_inventory",
     "version" : "14.1.1099000000002177"
-  }, {
-    "id" : "folio_inventory-import-4.1.2099000000000275",
-    "name" : "folio_inventory-import",
-    "version" : "4.1.2099000000000275"
   }, {
     "id" : "folio_plugin-create-inventory-records-7.0.1099000000000165",
     "name" : "folio_plugin-create-inventory-records",
@@ -4439,7 +4439,7 @@
       }
     }
   }, {
-    "id" : "folio_inventory-import-4.1.2099000000000275",
+    "id" : "folio_inventory-import-4.1.2099000000000276",
     "name" : "Admin console for FOLIO's Inventory Import facility",
     "requires" : [ {
       "id" : "inventory-import",
