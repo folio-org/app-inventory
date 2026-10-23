@@ -1,16 +1,12 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005180",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005185",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000005180",
+  "version" : "1.1.0-SNAPSHOT.100200000005185",
   "description" : "Inventory Application",
   "modules" : [ {
-    "id" : "edge-inventory-2.4.0-SNAPSHOT.2162",
-    "name" : "edge-inventory",
-    "version" : "2.4.0-SNAPSHOT.2162"
-  }, {
-    "id" : "mod-inventory-22.1.0-SNAPSHOT.2376",
+    "id" : "mod-inventory-22.1.0-SNAPSHOT.2394",
     "name" : "mod-inventory",
-    "version" : "22.1.0-SNAPSHOT.2376"
+    "version" : "22.1.0-SNAPSHOT.2394"
   }, {
     "id" : "mod-inventory-storage-31.0.0-SNAPSHOT.2960",
     "name" : "mod-inventory-storage",
@@ -19,6 +15,10 @@
     "id" : "mod-inventory-update-5.2.3-SNAPSHOT.2291",
     "name" : "mod-inventory-update",
     "version" : "5.2.3-SNAPSHOT.2291"
+  }, {
+    "id" : "edge-inventory-2.4.0-SNAPSHOT.2162",
+    "name" : "edge-inventory",
+    "version" : "2.4.0-SNAPSHOT.2162"
   } ],
   "uiModules" : [ {
     "id" : "folio_inventory-14.1.1099000000002193",
@@ -55,7 +55,7 @@
     "preRelease" : "only"
   } ],
   "moduleDescriptors" : [ {
-    "id" : "mod-inventory-22.1.0-SNAPSHOT.2376",
+    "id" : "mod-inventory-22.1.0-SNAPSHOT.2394",
     "name" : "Inventory Module",
     "requires" : [ {
       "id" : "holdings-sources",
@@ -542,7 +542,7 @@
       }
     },
     "launchDescriptor" : {
-      "dockerImage" : "folioci/mod-inventory:22.1.0-SNAPSHOT.2376",
+      "dockerImage" : "folioci/mod-inventory:22.1.0-SNAPSHOT.2394",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
