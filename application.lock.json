@@ -1,7 +1,7 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005238",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005239",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000005238",
+  "version" : "1.1.0-SNAPSHOT.100200000005239",
   "description" : "Inventory Application",
   "modules" : [ {
     "id" : "mod-inventory-22.1.0-SNAPSHOT.2419",
@@ -21,13 +21,13 @@
     "version" : "2.4.0-SNAPSHOT.2162"
   } ],
   "uiModules" : [ {
+    "id" : "folio_inventory-import-4.1.2099000000000287",
+    "name" : "folio_inventory-import",
+    "version" : "4.1.2099000000000287"
+  }, {
     "id" : "folio_inventory-14.1.1099000000002208",
     "name" : "folio_inventory",
     "version" : "14.1.1099000000002208"
-  }, {
-    "id" : "folio_inventory-import-4.1.2099000000000281",
-    "name" : "folio_inventory-import",
-    "version" : "4.1.2099000000000281"
   }, {
     "id" : "folio_plugin-create-inventory-records-7.0.1099000000000165",
     "name" : "folio_plugin-create-inventory-records",
@@ -4460,7 +4460,7 @@
       }
     }
   }, {
-    "id" : "folio_inventory-import-4.1.2099000000000281",
+    "id" : "folio_inventory-import-4.1.2099000000000287",
     "name" : "Admin console for FOLIO's Inventory Import facility",
     "requires" : [ {
       "id" : "inventory-import",
@@ -4483,29 +4483,38 @@
       "subPermissions" : [ "settings.inventory-import.enabled", "mod-settings.entries.collection.get", "inventory-update.import.steps.collection.get", "inventory-update.import.steps.item.get", "inventory-update.import.transformations.collection.get", "inventory-update.import.transformations.item.get", "inventory-update.import.channels.collection.get", "inventory-update.import.channels.item.get", "mod-settings.global.read.mod-inventory-update" ],
       "visible" : true
     }, {
-      "permissionName" : "ui-inventory-import.settings.view-edit",
+      "permissionName" : "ui-inventory-import.settings.edit",
+      "replaces" : [ "ui-inventory-import.settings.view-edit" ],
       "displayName" : "Inventory import (Settings): View, edit transformation pipelines, transformation steps, channels and log-file deletion threshold",
       "subPermissions" : [ "ui-inventory-import.settings.view", "mod-settings.entries.item.put", "mod-settings.entries.item.post", "inventory-update.import.steps.item.put", "inventory-update.import.transformations.item.put", "inventory-update.import.channels.item.put", "mod-settings.global.write.mod-inventory-update" ],
       "visible" : true
     }, {
-      "permissionName" : "ui-inventory-import.settings.view-edit-create",
+      "permissionName" : "ui-inventory-import.settings.create",
+      "replaces" : [ "ui-inventory-import.settings.view-edit-create" ],
       "displayName" : "Inventory import (Settings): View, edit, create transformation pipelines, transformation steps and channels",
-      "subPermissions" : [ "ui-inventory-import.settings.view-edit", "inventory-update.import.steps.item.post", "inventory-update.import.transformations.item.post", "inventory-update.import.channels.item.post" ],
+      "subPermissions" : [ "ui-inventory-import.settings.edit", "inventory-update.import.steps.item.post", "inventory-update.import.transformations.item.post", "inventory-update.import.channels.item.post" ],
       "visible" : true
     }, {
-      "permissionName" : "ui-inventory-import.settings.view-edit-create-delete",
+      "permissionName" : "ui-inventory-import.settings.delete",
+      "replaces" : [ "ui-inventory-import.settings.view-edit-create-delete" ],
       "displayName" : "Inventory import (Settings): View, edit, create, delete transformation pipelines, transformation steps and channels",
-      "subPermissions" : [ "ui-inventory-import.settings.view-edit-create", "inventory-update.import.steps.item.delete", "inventory-update.import.transformations.item.delete", "inventory-update.import.channels.item.delete" ],
+      "subPermissions" : [ "ui-inventory-import.settings.create", "inventory-update.import.steps.item.delete", "inventory-update.import.transformations.item.delete", "inventory-update.import.channels.item.delete" ],
       "visible" : true
     }, {
-      "permissionName" : "ui-inventory-import.jobs-and-failed-records.get",
+      "permissionName" : "ui-inventory-import.upload.execute",
+      "displayName" : "Inventory import (Settings): Upload files for import to a channel",
+      "subPermissions" : [ "ui-inventory-import.settings.view", "inventory-update.import.upload.post" ],
+      "visible" : true
+    }, {
+      "permissionName" : "ui-inventory-import.jobs-and-failed-records.view",
+      "replaces" : [ "ui-inventory-import.jobs-and-failed-records.get" ],
       "displayName" : "Inventory import: View jobs and failed records",
       "subPermissions" : [ "module.inventory-import.enabled", "inventory-update.import.import-jobs.collection.get", "inventory-update.import.import-jobs.item.get", "inventory-update.import.job-logs.collection.get", "inventory-update.import.failed-records.collection.get", "inventory-update.import.failed-records.item.get" ],
       "visible" : true
     }, {
       "permissionName" : "ui-inventory-import.all",
       "displayName" : "Inventory import: All permissions",
-      "subPermissions" : [ "ui-inventory-import.settings.view-edit-create-delete", "ui-inventory-import.jobs-and-failed-records.get" ],
+      "subPermissions" : [ "ui-inventory-import.settings.delete", "ui-inventory-import.upload.execute", "ui-inventory-import.jobs-and-failed-records.view" ],
       "visible" : true
     } ],
     "metadata" : {
