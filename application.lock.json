@@ -1,9 +1,13 @@
 {
-  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005251",
+  "id" : "app-inventory-1.1.0-SNAPSHOT.100200000005254",
   "name" : "app-inventory",
-  "version" : "1.1.0-SNAPSHOT.100200000005251",
+  "version" : "1.1.0-SNAPSHOT.100200000005254",
   "description" : "Inventory Application",
   "modules" : [ {
+    "id" : "edge-inventory-2.4.0-SNAPSHOT.2166",
+    "name" : "edge-inventory",
+    "version" : "2.4.0-SNAPSHOT.2166"
+  }, {
     "id" : "mod-inventory-22.1.0-SNAPSHOT.2419",
     "name" : "mod-inventory",
     "version" : "22.1.0-SNAPSHOT.2419"
@@ -15,10 +19,6 @@
     "id" : "mod-inventory-update-5.2.3-SNAPSHOT.2291",
     "name" : "mod-inventory-update",
     "version" : "5.2.3-SNAPSHOT.2291"
-  }, {
-    "id" : "edge-inventory-2.4.0-SNAPSHOT.2162",
-    "name" : "edge-inventory",
-    "version" : "2.4.0-SNAPSHOT.2162"
   } ],
   "uiModules" : [ {
     "id" : "folio_inventory-14.1.1099000000002226",
@@ -3553,7 +3553,7 @@
       }
     }
   }, {
-    "id" : "edge-inventory-2.4.0-SNAPSHOT.2162",
+    "id" : "edge-inventory-2.4.0-SNAPSHOT.2166",
     "name" : "Retrieve inventory information Edge API",
     "requires" : [ {
       "id" : "inventory",
@@ -3686,7 +3686,7 @@
       "required" : false
     } ],
     "launchDescriptor" : {
-      "dockerImage" : "folioci/edge-inventory:2.4.0-SNAPSHOT.2162",
+      "dockerImage" : "folioci/edge-inventory:2.4.0-SNAPSHOT.2166",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
