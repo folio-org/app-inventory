@@ -1,9 +1,13 @@
 {
-  "id" : "app-inventory-1.0.31",
+  "id" : "app-inventory-1.0.32",
   "name" : "app-inventory",
-  "version" : "1.0.31",
+  "version" : "1.0.32",
   "description" : "Inventory Application",
   "modules" : [ {
+    "id" : "edge-inventory-2.3.6",
+    "name" : "edge-inventory",
+    "version" : "2.3.6"
+  }, {
     "id" : "mod-inventory-22.0.7",
     "name" : "mod-inventory",
     "version" : "22.0.7"
@@ -15,10 +19,6 @@
     "id" : "mod-inventory-update-5.2.3",
     "name" : "mod-inventory-update",
     "version" : "5.2.3"
-  }, {
-    "id" : "edge-inventory-2.3.5",
-    "name" : "edge-inventory",
-    "version" : "2.3.5"
   } ],
   "uiModules" : [ {
     "id" : "folio_inventory-14.0.7",
@@ -3533,7 +3533,7 @@
       }
     }
   }, {
-    "id" : "edge-inventory-2.3.5",
+    "id" : "edge-inventory-2.3.6",
     "name" : "Retrieve inventory information Edge API",
     "requires" : [ {
       "id" : "inventory",
@@ -3590,7 +3590,7 @@
     "provides" : [ ],
     "permissionSets" : [ ],
     "launchDescriptor" : {
-      "dockerImage" : "folioorg/edge-inventory:2.3.5",
+      "dockerImage" : "folioorg/edge-inventory:2.3.6",
       "dockerPull" : true,
       "env" : [ {
         "name" : "JAVA_OPTIONS",
